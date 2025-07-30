@@ -186,6 +186,219 @@ const Index = () => {
           </Card>
         </div>
 
+        {/* Mushroom Farm Section */}
+        <Card className="mt-8 mb-8 animate-fade-in bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200">
+          <CardHeader>
+            <CardTitle className="flex items-center text-emerald-800">
+              <Icon name="TreePine" size={24} className="mr-3 text-emerald-600" />
+              Грибная ферма "Зеленый мицелий"
+            </CardTitle>
+            <CardDescription className="text-emerald-700">
+              Автоматизированное управление грибным производством
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-emerald-200">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-emerald-600 text-sm font-medium">Теплицы активны</p>
+                    <p className="text-2xl font-bold text-emerald-800">12/15</p>
+                  </div>
+                  <Icon name="Home" size={24} className="text-emerald-500" />
+                </div>
+              </div>
+              
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-emerald-200">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-emerald-600 text-sm font-medium">Урожай (кг)</p>
+                    <p className="text-2xl font-bold text-emerald-800">1,247</p>
+                  </div>
+                  <Icon name="Package" size={24} className="text-emerald-500" />
+                </div>
+              </div>
+              
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-emerald-200">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-emerald-600 text-sm font-medium">Температура</p>
+                    <p className="text-2xl font-bold text-emerald-800">18.5°C</p>
+                  </div>
+                  <Icon name="Thermometer" size={24} className="text-emerald-500" />
+                </div>
+              </div>
+              
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-emerald-200">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-emerald-600 text-sm font-medium">Влажность</p>
+                    <p className="text-2xl font-bold text-emerald-800">85%</p>
+                  </div>
+                  <Icon name="Droplets" size={24} className="text-emerald-500" />
+                </div>
+              </div>
+            </div>
+            
+            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
+              <Icon name="BarChart3" size={16} className="mr-2" />
+              Перейти к детальной аналитике
+            </Button>
+          </CardContent>
+        </Card>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+          {/* Climate Control */}
+          <Card className="animate-scale-in">
+            <CardHeader>
+              <CardTitle className="flex items-center">
+                <Icon name="Gauge" size={20} className="mr-2 text-blue-600" />
+                Климат-контроль
+              </CardTitle>
+              <CardDescription>Мониторинг микроклимата теплиц</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Thermometer" size={16} className="text-blue-600" />
+                    <div>
+                      <p className="font-medium text-sm">Теплица А1</p>
+                      <p className="text-xs text-slate-600">18.2°C, 87% влажность</p>
+                    </div>
+                  </div>
+                  <Badge variant="outline" className="text-blue-600 border-blue-300 bg-blue-50">Норма</Badge>
+                </div>
+                
+                <div className="flex items-center justify-between p-3 bg-orange-50 rounded-lg border border-orange-200">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="AlertTriangle" size={16} className="text-orange-600" />
+                    <div>
+                      <p className="font-medium text-sm">Теплица Б3</p>
+                      <p className="text-xs text-slate-600">21.8°C, 92% влажность</p>
+                    </div>
+                  </div>
+                  <Badge variant="outline" className="text-orange-600 border-orange-300 bg-orange-50">Высокая T°</Badge>
+                </div>
+                
+                <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg border border-green-200">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="CheckCircle" size={16} className="text-green-600" />
+                    <div>
+                      <p className="font-medium text-sm">Теплица В2</p>
+                      <p className="text-xs text-slate-600">17.9°C, 83% влажность</p>
+                    </div>
+                  </div>
+                  <Badge variant="outline" className="text-green-600 border-green-300 bg-green-50">Отлично</Badge>
+                </div>
+              </div>
+              
+              <Button size="sm" className="w-full">
+                <Icon name="Settings" size={16} className="mr-2" />
+                Настроить автоматику
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Growing Cycles */}
+          <Card className="animate-scale-in" style={{animationDelay: '0.1s'}}>
+            <CardHeader>
+              <CardTitle className="flex items-center">
+                <Icon name="RotateCcw" size={20} className="mr-2 text-purple-600" />
+                Циклы выращивания
+              </CardTitle>
+              <CardDescription>Управление производственными циклами</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <div className="p-3 border border-slate-200 rounded-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium text-sm">Шампиньоны - Партия #47</span>
+                    <Badge variant="outline" className="text-green-600 border-green-300">День 18/25</Badge>
+                  </div>
+                  <Progress value={72} className="h-2 mb-2" />
+                  <p className="text-xs text-slate-600">Ожидаемый сбор: 145 кг</p>
+                </div>
+                
+                <div className="p-3 border border-slate-200 rounded-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium text-sm">Вешенки - Партия #23</span>
+                    <Badge variant="outline" className="text-blue-600 border-blue-300">День 12/21</Badge>
+                  </div>
+                  <Progress value={57} className="h-2 mb-2" />
+                  <p className="text-xs text-slate-600">Ожидаемый сбор: 89 кг</p>
+                </div>
+                
+                <div className="p-3 border border-slate-200 rounded-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium text-sm">Опята - Партия #15</span>
+                    <Badge variant="outline" className="text-orange-600 border-orange-300">Подготовка</Badge>
+                  </div>
+                  <Progress value={5} className="h-2 mb-2" />
+                  <p className="text-xs text-slate-600">Старт цикла: завтра</p>
+                </div>
+              </div>
+              
+              <Button size="sm" className="w-full">
+                <Icon name="Plus" size={16} className="mr-2" />
+                Запустить новый цикл
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Sales Analytics */}
+          <Card className="animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <CardHeader>
+              <CardTitle className="flex items-center">
+                <Icon name="TrendingUp" size={20} className="mr-2 text-green-600" />
+                Продажи и аналитика
+              </CardTitle>
+              <CardDescription>Финансовые показатели фермы</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg border border-green-200">
+                  <div>
+                    <p className="font-medium text-sm">Выручка за месяц</p>
+                    <p className="text-xl font-bold text-green-700">₽347,650</p>
+                  </div>
+                  <Icon name="TrendingUp" size={20} className="text-green-600" />
+                </div>
+                
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-600">Шампиньоны (850 кг)</span>
+                    <span className="font-medium">₽187,000</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-600">Вешенки (420 кг)</span>
+                    <span className="font-medium">₽98,400</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-600">Опята (210 кг)</span>
+                    <span className="font-medium">₽62,250</span>
+                  </div>
+                  <div className="border-t pt-2 mt-2">
+                    <div className="flex justify-between items-center font-medium">
+                      <span>Расходы</span>
+                      <span className="text-red-600">-₽89,420</span>
+                    </div>
+                    <div className="flex justify-between items-center font-bold text-green-700">
+                      <span>Прибыль</span>
+                      <span>₽258,230</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <Button size="sm" className="w-full">
+                <Icon name="FileBarChart" size={16} className="mr-2" />
+                Подробный отчет
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Billing Section */}
         <Card className="mt-8 animate-fade-in" style={{animationDelay: '0.4s'}}>
           <CardHeader>
